@@ -53,7 +53,7 @@ function run {
 			;;
 		clean_up)
 			# clean up
-			sudo rm -Rf $DIR/tmp/{fdk-aac,ffmpeg}
+			sudo rm -Rf $DIR/tmp/{fdk-aac,x264,ffmpeg}
 			;;
 		*)
 			break
