@@ -7,7 +7,7 @@ mkdir -p $DIR/tmp
 mkdir -p $DIR/packages/
 
 # Prepare for compilation
-sudo apt-get install git autoconf automake build-essential checkinstall libass-dev libgpac-dev libmp3lame-dev \
+sudo apt-get install -y git autoconf automake build-essential checkinstall libass-dev libgpac-dev libmp3lame-dev \
 libopencore-amrnb-dev libopencore-amrwb-dev librtmp-dev libspeex-dev libtheora-dev libtool libvorbis-dev \
 pkg-config texi2html zlib1g-dev yasm
 
