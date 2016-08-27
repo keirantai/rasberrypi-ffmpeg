@@ -3,6 +3,8 @@
 function run {
 	case "$1" in
 		install_basic_packages)
+			# update repo before installation
+			apt-get update
 			# Prepare for compilation
 			sudo apt-get install -y git autoconf automake build-essential checkinstall libass-dev libgpac-dev libmp3lame-dev \
 			libopencore-amrnb-dev libopencore-amrwb-dev librtmp-dev libspeex-dev libtheora-dev libtool libvorbis-dev \
