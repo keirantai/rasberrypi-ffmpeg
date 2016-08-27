@@ -21,7 +21,7 @@ function run {
 			;;
 		install_fdk-aac)
 			# install the compiled fdk-aac package
-			sudoe dpkg -i $DIR/packages/fdk-aac_*-git-1_armhf.deb
+			sudo dpkg -i $DIR/packages/fdk-aac_*-git-1_armhf.deb
 			;;
 		compile_x264)
 			# Compile x264 library (used by ffmpeg)
@@ -35,7 +35,7 @@ function run {
 			;;
 		install_x264)
 			# install the compiled fdk-aac package
-			sudoe dpkg -i $DIR/packages/x264_*-git-1_armhf.deb
+			sudo dpkg -i $DIR/packages/x264_*-git-1_armhf.deb
 			;;
 		compile_ffmpeg)
 			# Compile ffmpeg with libfdk capability
@@ -49,7 +49,7 @@ function run {
 			;;
 		install_ffmpeg)
 			# install the compiled fdk-aac package
-			sudoe dpkg -i $DIR/packages/ffmpeg_*-git-1_armhf.deb
+			sudo dpkg -i $DIR/packages/ffmpeg_*-git-1_armhf.deb
 			;;
 		clean_up)
 			# clean up
