@@ -44,7 +44,7 @@ function run {
 			cd $DIR/tmp
 			git clone --depth 1 git://source.ffmpeg.org/ffmpeg
 			cd ffmpeg
-			./configure --enable-gpl --enable-libass --enable-libfdk-aac --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libspeex --enable-librtmp --enable-libtheora --enable-libvorbis --enable-nonfree --enable-version3
+			./configure --enable-gpl --enable-libass --enable-libfdk-aac --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libspeex --enable-librtmp --enable-libtheora --enable-libvorbis --enable-nonfree --enable-version3 --enable-libx264
 			make
 			sudo checkinstall --pkgname=ffmpeg --pkgversion="7:$(date +%Y%m%d%H%M)-git" --backup=no --deldoc=yes --fstrans=no --default
 			mv ffmpeg_*-git-1_armhf.deb $DIR/packages/
